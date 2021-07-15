@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import * as Vue from 'vue';
 import App from './App'
 import router from './router'
 import store from './store/'
@@ -18,16 +18,9 @@ import i18n from "@/lang";
 
 // 分享功能集合
 import { shareConfig } from './utils/share';
+import IconSvg from "../src/components/iconSvg/index.js";
 Vue.prototype.shareConfig = shareConfig;
 
 
-Vue.config.productionTip = false;
 
-
-
-new Vue({
-  router,
-  store,
-  i18n,  // 便于可以直接在组件中通过this.$i18n使用，也可以按需引用
-  render: h => h(App),
-}).$mount('#app')
+Vue.createApp(App).use(IconSvg).use(i18n).use(router).use(store).mount('#app')
