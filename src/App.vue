@@ -12,7 +12,7 @@
 
 <style lang="less">
     @import './style/variables';
-	@import './style/element-ui';
+	@import './style/element-plus';
 	@import './style/common';
 	@import './style/scrollBar';
 </style>

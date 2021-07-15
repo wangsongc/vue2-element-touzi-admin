@@ -2,7 +2,7 @@ import router from './router'
 import store from './store'
 import NProgress from 'nprogress' // Progress 进度条
 process.env.NODE_ENV === "development" && import('nprogress/nprogress.css')
-import { Message } from 'element-ui'
+import { ElMessage } from 'element-plus'
 import { getToken } from '@/utils/auth' // 验权(从cookie中获取)
 import { getUserInfo } from "@/api/user";
 import {
@@ -43,7 +43,7 @@ router.beforeEach((to, from, next) => {
           })
         }).catch((err) => {
           store.dispatch('LogOut').then(() => {
-            Message.error(err || 'Verification failed, please login again')
+            ElMessage.error(err || 'Verification failed, please login again')
             next({ path: '/' })
           })
         })

@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "core-js": "^2.6.9",
+    "core-js": "^3.15.2",
     "echarts": "^4.2.1",
-    "element-ui": "^2.11.1",
+    "element-plus": "^1.0.2-beta.55",
     "express": "^4.17.1",
     "js-cookie": "^2.2.1",
     "mockjs": "^1.0.1-beta3",
@@ -44,11 +44,25 @@
   },
   "eslintConfig": {
     "root": true,
-    "env": { "node": true },
-    "extends": ["plugin:vue/essential", "eslint:recommended"],
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
     "rules": {},
-    "parserOptions": { "parser": "@babel/eslint-parser" }
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    }
   },
-  "postcss": { "plugins": { "autoprefixer": {} } },
-  "browserslist": ["> 1%", "last 2 versions"]
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
