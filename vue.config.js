@@ -120,7 +120,7 @@ module.exports = {
         "vuex": "Vuex",
         "vue-i18n": "VueI18n",
         "axios": "axios",
-        'element-ui': 'ELEMENT',
+        'element-plus': 'ELEMENT',
         'echarts':'echarts',
         'mockjs':'Mock',
         'nprogress':'NProgress',

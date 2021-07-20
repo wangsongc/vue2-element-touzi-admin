@@ -4,8 +4,7 @@ import router from './router'
 import store from './store/'
 // 'development',use package;'production':use cdn;
 import ElementUI from "element-plus"
-Vue.use(ElementUI, { size: 'mini'});
-import('element-ui/lib/theme-chalk/index.css')
+import('element-plus/lib/theme-chalk/index.css')
 
 import './components/iconSvg' // iconSvg
 
@@ -23,5 +22,5 @@ Vue.prototype.shareConfig = shareConfig;
 
 
 
-const app = Vue.createApp(App).use(IconSvg).use(i18n).use(router).use(store);
+const app = Vue.createApp(App).use(IconSvg).use(i18n).use(router).use(store).use(ElementUI, { size: 'mini'});
 app.mount("#app");
