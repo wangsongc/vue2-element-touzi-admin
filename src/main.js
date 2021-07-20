@@ -18,9 +18,7 @@ import i18n from "@/lang";
 // 分享功能集合
 import { shareConfig } from './utils/share';
 import IconSvg from "../src/components/iconSvg/index.js";
-Vue.prototype.shareConfig = shareConfig;
-
-
 
 const app = Vue.createApp(App).use(IconSvg).use(i18n).use(router).use(store).use(ElementUI, { size: 'mini'});
+app.config.globalProperties.shareConfig = shareConfig;
 app.mount("#app");
